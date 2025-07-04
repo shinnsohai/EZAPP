@@ -1,0 +1,140 @@
+.testimonials {
+  background-color: var(--off-white);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  color: var(--dark-gray);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card {
+  background-color: var(--pure-white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--primary-red);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-content {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: var(--primary-red);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  font-style: italic;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonial-author strong {
+  color: var(--dark-gray);
+  font-size: 1rem;
+}
+
+.testimonial-author span {
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+.reviews-badge {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.google-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--pure-white);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-gray);
+}
+
+.stars {
+  font-size: 1.5rem;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.review-text strong {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+}
+
+.review-text span {
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+  }
+
+  .google-reviews {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .review-text {
+    align-items: center;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
